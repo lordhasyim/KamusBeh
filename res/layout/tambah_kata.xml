@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:id="@+id/imgViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_blue"
+        android:contentDescription="@null"
+        android:src="@drawable/kamus" />
+
+    <TextView
+        android:id="@+id/txtBhsInggris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtBhsIndonesia"
+        android:layout_below="@+id/txtBhsIndonesia"
+        android:layout_marginTop="37dp"
+        android:text="Inggris" />
+
+    <TextView
+        android:id="@+id/txtBhsJerman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtBhsInggris"
+        android:layout_below="@+id/txtBhsInggris"
+        android:layout_marginTop="36dp"
+        android:text="Jerman" />
+
+    <EditText
+        android:id="@+id/edIndonesia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtBhsIndonesia"
+        android:layout_alignBottom="@+id/txtBhsIndonesia"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/txtBhsIndonesia"
+        android:ems="10" >
+
+        <requestFocus />
+        <requestFocus />
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edInggris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtBhsInggris"
+        android:layout_alignBottom="@+id/txtBhsInggris"
+        android:layout_alignLeft="@+id/edIndonesia"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edJerman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtBhsJerman"
+        android:layout_alignBottom="@+id/txtBhsJerman"
+        android:layout_alignLeft="@+id/edInggris"
+        android:ems="10" >
+    </EditText>
+
+         <Button
+             android:id="@+id/btnSubmit"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/edJerman"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="21dp"
+             android:background="@color/bg_blue"
+             android:text="simpan" />
+
+         <TextView
+             android:id="@+id/txtBhsIndonesia"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/txtJudulApp"
+             android:layout_marginTop="30dp"
+             android:text="Indonesia" />
+
+         <TextView
+             android:id="@+id/txtJudulApp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/imgViewHeader"
+             android:layout_centerHorizontal="true"
+             android:text="Tambah Kata"
+             android:textColor="@color/bg_blue"
+             android:textSize="25sp" />
+
+</RelativeLayout>

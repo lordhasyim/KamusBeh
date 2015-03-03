@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Edit Kata"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/bg_blue" />
+
+    <EditText
+        android:id="@+id/editText_indonesia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtBhsIndonesia"
+        android:layout_alignBottom="@+id/txtBhsIndonesia"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/txtBhsIndonesia"
+        android:ems="10" >
+
+        <requestFocus />
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_inggris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtBhsInggris"
+        android:layout_alignBottom="@+id/txtBhsInggris"
+        android:layout_alignLeft="@+id/editText_indonesia"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText_jerman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtBhsJerman"
+        android:layout_alignBottom="@+id/txtBhsJerman"
+        android:layout_alignLeft="@+id/editText_inggris"
+        android:ems="10" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtBhsIndonesia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtJudul"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="58dp"
+        android:text="Indonesia" />
+
+    <TextView
+        android:id="@+id/txtBhsInggris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtBhsIndonesia"
+        android:layout_below="@+id/editText_indonesia"
+        android:layout_marginTop="40dp"
+        android:text="Inggris" />
+
+    <TextView
+        android:id="@+id/txtBhsJerman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtBhsInggris"
+        android:layout_centerVertical="true"
+        android:text="Jerman" />
+
+    <TextView
+        android:id="@+id/text_id_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_indonesia"
+        android:layout_alignParentLeft="true"
+        android:text="@string/title_edit"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText_jerman"
+        android:layout_marginTop="26dp"
+        android:background="?android:attr/dividerVertical"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_save_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/tombol_edit" />
+
+        <Button
+            android:id="@+id/button_cancel_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/tombol_cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

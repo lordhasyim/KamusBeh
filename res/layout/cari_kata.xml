@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/edCariIndonesia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtIndonesia"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/fill_colors"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edCariInggris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtInggris"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fill_colors"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtJerman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtInggris"
+        android:layout_below="@+id/edCariInggris"
+        android:layout_marginTop="33dp"
+        android:text="Jerman" />
+
+    <EditText
+        android:id="@+id/edCariJerman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtJerman"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/fill_colors"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtInggris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtIndonesia"
+        android:layout_centerVertical="true"
+        android:text="Inggris" />
+
+    <TextView
+        android:id="@+id/txtJudulCari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Cari Kata"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/bg_blue" />
+
+    <TextView
+        android:id="@+id/txtIndonesia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtJudulCari"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Indonesia" />
+
+    <Button
+        android:id="@+id/tombolCari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edCariIndonesia"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded"
+        android:text="Terjemahkan" />
+
+</RelativeLayout>

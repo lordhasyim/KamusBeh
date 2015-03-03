@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KamusBeh</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="cari_kata">Cari Kata</string>
+    <string name="tambah_kata">Tambah Kata</string>
+    <string name="lihat_kata">Lihat Kata</string>
+    <color name="bg_blue">#03a9f4</color>
+    <string name="tombol_dialog_edit">Edit</string>
+    <string name="tombol_dialog_delete">Delete</string>
+    <string name="about">About</string>
+    <string name="simpan">simpan</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="data_kata">Data Kata</string>
+    <string name="title_view">Data Kata</string>
+	<string name="title_edit">Kata | ID : </string>
+	<string name="tombol_edit">Save</string>
+	<string name="tombol_cancel">Cancel</string>
+
+</resources>
