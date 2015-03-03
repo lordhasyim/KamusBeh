@@ -9,3 +9,5 @@ untuk database nya masih kosong, silahkan isi sendiri ya, good luck
 
 Feel free to use.
 Drink Coffee, do Open Source.
+
+![](https://github.com/lordhasyim/KamusBeh/blob/master/Screenshot/Home.png)
